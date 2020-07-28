@@ -14,21 +14,35 @@ class CalcController {
 
     initialize(){
 
-        dateEl.innerHTML = "01/05/2020";
-        timeEl.innerHTML = "00:00";
 
+    }
+
+    get displayTime(){
+      return.this_timeEl.innerHTML;
+    }
+
+    set displayTime(value){
+      return.this_timeEl.innerHTML = value;
+    }
+
+    get displayDate(){
+      return.this_dateEl.innerHTML;
+    }
+
+    set displayDate(value){
+      return.this_dateEl.innerHTML = value;
     }
 
     get displayCalc(){
       return this._displayCalcEl.innerHTML;
     }
 
-    set displayCalc(valor){
-      this._displayCalcEl.innerHTML = valor;
+    set displayCalc(value){
+      this._displayCalcEl.innerHTML = value;
     }
 
     get currentDate(){
-      return this._currentDate;
+      return new Date();
     }
 
     set currentDate(data){
